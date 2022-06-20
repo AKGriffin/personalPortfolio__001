@@ -1,0 +1,2735 @@
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+-PROJECT SETIP-
+
+    Create project folder
+    create index.html
+    create main.js
+    create style.css
+    create assets folder
+        add images to asset folder
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+-HTML SETUP-
+
+    open index.html
+
+
+
+
+
+    open html
+    add html boilerplate
+        add text to title tag
+        inn the head add link tag
+            link style.css
+
+    in the body tag add script tag
+        link main.js
+
+    add header tag
+        add class
+            container-guid
+        add h1 element
+            add text
+                navigation menu
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+-CSS VARIABLES-
+
+    create cssVariables branch in git
+    in style.class
+    create variables section with comments
+    add root slector
+    add variables to root selector
+    create text colors comment header in root selector
+    --text-gray: #808291;
+    --text-white: #f8f9fa;
+    --text-light: #f6f6f6;
+    --text-dark: #1A3260;
+    --text-dark2: #1A3760D4;
+    --text-red: #ff4d6d;
+    --box-shadow: 0px 0px 50px 0px rgb(0 0 0 / 10%);
+    --bg-blue: rgb(249, 243, 255);
+    --bg-red: rgb(254, 247, 252);
+    --bg-yellow: rgb(255, 255, 246);
+    --bg-purple: rgb(246, 255, 255);
+
+    add font family comment header
+    to the top of style.css import pooppins google font
+    --font-poppins: "Poppins", 'san-serif';
+
+    add grdient colors comment header
+    --bg-gradient: linear-gradient(to-right, #ff512f, dd2476);
+    --bg-gradient-indigo: linear-gradient(to-right, #8e2de2,#4a00e0);
+    --bg-gradient-peach: linear-gradient(to-right, #fff7f3, #fff7f3);
+
+    add imagers comment header
+    --bg-cover: url("./assets/bgimg1.png")
+    --bg-image1: url("./assets/img1.png")
+    --bg-image2: url("./assets/img2.png")
+    --bg-image3: url("./assets/img3.png")
+
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    -CSS RESET-
+        in CSS rest
+
+            select *>*
+
+                set attributes
+                    box sixing
+                        border box
+                    padding
+                        0
+                    margin
+                        0
+                
+                finished code
+                    *>*{
+                        box-sizing: border-box;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+            select anchor tag
+
+                set attributes
+                    text-decoration
+                        none
+
+                finished code
+                    a{
+                        text-decoration: none;
+                    }
+
+            select unordered list tag
+
+                set attributes
+                    list-style-type
+                        none
+
+                finished code
+                    ul{
+                        list-style-stype: none;
+                    }
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+-GLOBAL CLASSES-
+
+    open style.css
+
+        select
+
+            set attribute
+            
+            finished code
+                .text-dark{
+                    color: var(--text-dark);
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .text-light{
+                    color: var(--text-light);
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .text-gray{
+                    color: var(--text-gray);
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .text-red{
+                    color: var(--text-red);
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .bg-gradient{
+                    background: var(--bg-gradient);
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .bg-gradient-indigo{
+                    background: var(--bg-gradient-indigo);
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .bg-gradient-peach{
+                    background: var(--bg-gradient-peach);
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .bg-gradient-red{
+                    background: var(--bg-red);
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .bg-gradient-blue{
+                    background: var(--bg-blue);
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .bg-gradient-yellow{
+                    background: var(--bg-yellow);
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .bg-gradient-purple{
+                    background: var(--bg-purple);
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .font-poppins{
+                    font-family: var(--font-poppins);
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .text-center{
+                    text-align: center;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .text-sm{
+                    font-size: 1em;
+                    line-height: 1.5rem;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .text-md{
+                    font-size: 1.5em;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .text-lg{
+                    font-size: 2.2em;
+                    line-height: 3rem;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .text-xl{
+                    font-size: 3em;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .text-2xl{
+                    font-size: 5em;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .font-bold{
+                    font-weight: bold;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .flex{
+                    display: flex;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .flex-row{
+                    flex-direction: row;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .flex-column{
+                    flex-direction: column;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .flex-wrap{
+                    flex-wrap: wrap.
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .flex-initial{
+                    flex: 0 1 auto;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .flex-grow{
+                    flex-grow: 1;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .justify-center{
+                    justify-content: center;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .text-uppercase{
+                    text-transform: uppercase;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .container{
+                    width: 100%;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .container-fluid{
+                    width: 98%
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .mx-auto{
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .py-2{
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .py-5{
+                    padding-top: 1.5rem;
+                    padding-bottom: 1.5rem;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .py-10{
+                    padding-top: 4.5rem;
+                    padding-bottom: 4.5rem;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .px-5{
+                    padding-top: 1.5rem;
+                    padding-bottom: 1.5rem;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .px-10{
+                    padding-top: 3.5rem;
+                    padding-bottom: 3.5rem;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .link{
+                    color: var(--text-dark2);
+                    font-weight: bold;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .link:hover{
+                    color: var(--text-red);
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .btn{
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .btn-primary{
+                    padding: 8rem 2rem;
+                    border-radius: 50px; 
+                    font-family: var(--font-poppins);
+                    font-weight: bold;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .btn-shadow{
+                    box-shadow: var(--box-shadow);
+                }
+
+                .btn-primary:hover{
+                    background: var(--bg-gradient-indigo);
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .bg-cover{
+                    background: var(--cover);
+                    object-fit: fill;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .d-inline{
+                    display: inline-block;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .d-block{
+                    display: block;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .grid{
+                    display: grid;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .cols-1{
+                    grid-template-columns: repeat(1, minmax(0, 1fr));
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .w-100{
+                    width: 100%;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                .w-50{
+                    width: 50%;
+                }
+
+        select
+
+            set attribute
+            
+            finished code
+                body{
+                    width: 100%;
+                    background: url('./assets/background.png') no-repeat;
+                    background-size: cover;
+                }
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-HEADER HTML-
+
+open index.html
+    in body tag
+        add header
+            add class
+                container-fluid
+            add nav tag
+                add id
+                    nav
+                add class
+                    flex
+                    font-poppins
+                add div
+                    add class 
+                        nav-brand
+                    add anchor
+                        add class 
+                            text-dark
+                        add text 
+                            Digital
+
+                add div
+                    add class 
+                        toggle-btn
+                    add button
+                        add class 
+                            btn
+                        add i
+                            add class
+                            bi
+                            bi-filter-right
+                
+                add div tag
+                    add class
+                        collapse
+                        flex-grow
+                    add unordered list
+                        add class
+                            flex
+                        add list item
+                            add anchor
+                                add class
+                                    link
+                                add text
+                                    home
+                        add list item
+                            add anchor
+                                add class
+                                    link
+                                add text
+                                    about
+                        add list item
+                            add anchor
+                                add class
+                                    link
+                                add text
+                                    services
+                        add list item
+                            add anchor
+                                add class
+                                    link
+                                add text
+                                    work
+                        add list item
+                            add anchor
+                                add class
+                                    link
+                                add text
+                                    contact
+
+                add div
+                    add class
+                        flex-initial
+                    add unorder list
+                        add class
+                            flex
+                        add button
+                            add class
+                                btn 
+                                btn-primary 
+                                bg-gradient 
+                                text-white 
+                                text-uppercase 
+                                btn-shadow
+                            add text
+                                start a project
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+-HEADER STYLING-
+
+    open style.css
+        in custom styles
+
+            select nav tag
+
+                set attributes
+                    position
+                        absolute
+                    top
+                        0
+                    left
+                        0
+                    width
+                        100%
+                    padding
+                        1em
+                        1.5rem
+                    background
+                        var(--text-light)
+                    flex-direction
+                        column
+                
+                finished code
+                    #nav{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        padding: 1rem 1.5rem;
+                        background: var(--text-light);
+                        flex-direction: column;
+                    }
+
+            select collapse class of the nav ID
+
+                set attribute
+                    max-height
+                        0px
+                    overflow-y
+                        hidden
+                    transition
+                        all 0.9s ease
+
+                finished code
+                    #nav .collapse{
+                        max-height: 0px;
+                        overflow-y: hidden;
+                        transition: all 0.9s ease;
+                    }
+
+            select unodered list of collapse class of nav ID
+
+                set attributes
+                    flex-direction
+                        column
+                    text-align
+                        center
+                    padding
+                        0 3rem
+
+                finished code
+                    #nav .collapse ul{
+                        flex-direction: column;
+                        text-align: center;
+                        padding: 0 3rem;
+                    }
+
+            select list item tag that is child of unordered list of the collapse class of the nav ID
+
+                set attributes
+                    padding
+                        0 1.5rem
+                    line-height
+                        3rem
+                    font-size
+                        1.1em
+
+                finished code
+                    #nav .collapse ul > li{
+                        padding: 0 1.5rem;
+                        line-height: 3rem;
+                        font-size: 1.1em
+                    }
+
+            select btn ?class or tag? that is child of toggle-btn class of the nav ID
+
+                set attributes
+                    font-size
+                        2em
+                    position
+                        absolute
+                    right
+                        0
+                    left
+                        0
+                    padding
+                        1rem
+                    color
+                        var(--text-dark2)
+
+                finished code
+                    #nav .toggle-btn > btn{
+                        font-size: 2em;
+                        position: absolute;
+                        right: 0;
+                        left: 0;
+                        padding: 1rem;
+                        color: var(--text-dark2)
+                    }
+
+            select button of the unordered list of the flex-initial class of the nav ID
+
+                set attributes
+                    display
+                        none
+
+                finished code
+                    #nav .flex-initial ul button{
+                        display: none
+                    }
+
+            select active class
+
+                set attributes
+                    max-height
+                        50vh !important
+                        
+                finished code
+                    .active{
+                        max-height: 50vh !important;
+                        }
+
+can we add the w-100 class to the nav tag?
+can we add the flex-column to the nav tag?
+
+Can we use something other than id selectors and combinators?
+should we use combinators?
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+-NAV COLLAPSE-
+
+This script is to hide and show the navigation
+can we do this with just CSS?
+
+open main.jss
+    add to main.js
+        window.onload = function digital_fn(){
+
+        }
+    this creates a function that executes when the window has loaded
+
+    add to the function
+        let toggle = document.querySelector("#nav toggle.btn");
+        let collapse = document.querySelector("#nav .collapse);
+    these create variables to select specific elements in the html file
+
+    add event listener to the funciton
+        toggle.addEventListener("click", function(event,
+            collapse.classList.toggle('active');
+        ));
+
+should we create the function outside of the event listener and call it when clicked?
+how can we do this without using important?
+Do we toggle both the collapse and active classes?
+we need to remove the id selector in css
+maybe not using combinators will help
+Can we skip this script entirely and do it with CSS?
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+-MEDIA QUERIES-
+
+open css
+    Add media query for large screens
+    after the global variables
+        add a parameter of a minimum width
+            1024px
+
+    @media (min-width: 1024px){
+
+    }
+
+        add to the large media query 
+            select the toggle-btn class of the nav ID
+                display
+                    none
+
+            #nav .toggle-btn > button(
+                display: none;
+            )
+
+    select the collapse class
+        height
+            initial !important
+    
+        .collapse{
+            max-height: initial !important;
+        }
+
+        how can we do this without !important?
+    
+    select the unorder list of the collapse class 
+    set flow-direction to row
+    set to !important
+    
+        .collapse ul{
+            flex-direction: row !important;
+        }
+
+        how can we do this without !important?
+    
+    select the nav ID 
+    set the flex-direction to row
+    set to important
+
+        #nav{
+            flex-direction: row !important;
+            padding-left: 6rem;
+            padding-right: 6rem;
+        }
+
+        how can we do this without the nav ID selector?
+        how can we do this without !important?
+
+    select the active class
+    set the max-height to 100%
+    set to !important
+
+        .active{
+            max-height: 100% !important;
+        }
+
+        how can we do this without !important?
+
+add another media query for extra large screens
+
+    @media (min-width: 1280px){
+
+    }
+
+    select the nav ID
+    set the background to transparent
+    set to important
+
+        #nav{
+            background: transparent !important;
+        }
+
+        how can we do this without !important?
+    
+    select the button of the unordered list of the .flex-inital class of the nav ID
+    set display to inline-block
+    set to important
+
+        #nav .flex-initial ul btn{
+            display: inline-block !important;
+        }
+
+        how can we do this without !important?
+        can we use the d-inline class?
+
+add another media query for small screens
+    @media (min-width: 640px){
+
+    }
+
+add another media query for medium screens
+    @media (min-width: 768px){
+
+    }
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+-BANNER AREA HTML-
+
+open html file
+add a main tag after the header tag
+    add id
+        site-main
+    add section
+        add class
+            banner-area
+            font-poppins
+        add div
+            add class
+                container
+                mx-auto
+                banner-title
+            add div
+                add class
+                    title
+                add span
+                    add text to span
+                        digital experience
+                    add class
+                        d-inline
+                        btn
+                        btn-primary
+                        bg-gradient
+                        bg-gradient-peach
+                        text-red
+                add div
+                    add class
+                        py-2
+                        branding
+                        text-dark
+                        text-lg
+                        sm-text-xl
+                        font-bold
+                    add span
+                        add class
+                            d-block
+                        add text
+                            Branding. Digital.
+                    add span
+                        add class
+                            d-block
+                        add text
+                            Marketing and
+                    add span
+                        add class
+                            d-block
+                        add text
+                            business solutions
+
+                    Can we do this with less spans? 
+                    Should we be using multiple spans? 
+                    can we put a breaks in one span?
+                    should this be a paragraph?
+
+                add div
+                    add class
+                        py-5
+                    add paragraph
+                        add class
+                            text-grey
+                        add text
+                            We merge imagination and technology to help thousands of
+                    add paragraph
+                        add class
+                            text-grey
+                        add text
+                            brands grow in an age of digital transformation
+                    
+                    should we be using multiple paragraphs?
+                    can we just use breaks in a single paragraph?
+
+                add div
+                    add class
+                        py-5
+                    add anchor
+                        add class
+                            btn
+                            btn-primary
+                            bg-gradient
+                            text-white
+                            btn-shadow
+                        add text
+                            work together
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+-BANNER AREA CSS-
+
+    open the CSS
+        in the custom styles
+
+            select the banner area class of the site-main ID
+
+                set attribute
+                    width
+                        100%
+                    position
+                        relative
+                    background
+                        var(--bg-cover)
+                    background-repeat
+                        no-repeat
+                    background-position-x
+                        right
+                    z-index
+                        -99
+                
+                finished code
+                    #site-main banner-area{
+                        width: 100%;
+                        position: relative;
+                        background: var(--bg-cover);
+                        background-repeat: no-repeat;
+                        background-position-x: right;
+                        z-index: -99;
+                    }
+
+does the z-index need to be -99?
+how can we do this without an ID selector
+how can we do this without a combinator
+
+            select the banner-title class of the banner-area class of the site-main ID
+                
+                set attribute
+                    height
+                        95vh
+                    padding-top
+                        16rem
+
+                finished code
+                    #main-site .banner-area .banner-title{
+                        height: 95vh;
+                        padding-top: 16rem;
+                    }
+
+in the small media query
+
+    select the sm-text-xlclass
+
+        set attribute
+            font-size
+                3em
+
+        finished code
+            .sm-text-xl{
+                font-size: 3em;
+            }
+        
+    this whole .sm-text-xl class feels extra. like its a fix to a problem that doesnt need to be there
+    Do we need classes specific to media-queries?
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+-AGENCY AREA HTML-
+
+open the html file
+add a section tag after the banner-area section
+    add class
+        agency-area
+    add div
+        add class 
+        container
+        mx-auto
+        text-center
+        font-poppins
+    add span
+        add class
+            text-red
+    add div
+        add class
+            text-area
+        add h1 tag
+            add class
+                text-lg
+                text-dark
+            add text
+                We design and build beautiful digital<br>
+                products that make a difference
+            
+    add div
+        add class
+            grid
+            cols-1
+            lg-cols-3
+            py-10
+        add div
+            add class
+                grid-item
+                px-5
+            add div
+                add class
+                    text-center
+                    text-2xt
+                    text-red
+                add i tag
+                    add class
+                        bi bi-bricks 
+            add div
+                add class
+                    text-center
+                add h4
+                    add class
+                        text-md
+                        py-2
+                    add text
+                        Grow Your Business
+                add p
+                    add class
+                        text-gray
+                    add text
+                        lorem ipsum
+
+        add div
+            add class
+                grid-item
+                px-5
+            add div
+                add class
+                    text-center
+                    text-2xt
+                    text-red
+                add i tag
+                    add class
+                        bi bi-megaphone 
+            add div
+                add class
+                    text-center
+                add h4
+                    add class
+                        text-md
+                        py-2
+                    add text
+                        Digital Marketing
+                add p
+                    add class
+                        text-gray
+                    add text
+                        lorem ipsum
+
+        add div
+            add class
+                grid-item
+                px-5
+            add div
+                add class
+                    text-center
+                    text-2xt
+                    text-red
+                add i tag
+                    add class
+                        bi bi-mouse 
+            add div
+                add class
+                    text-center
+                add h4
+                    add class
+                        text-md
+                        py-2
+                    add text
+                        Search Engine Optimization
+                add p
+                    add class
+                        text-gray
+                    add text
+                        lorem ipsum
+        
+        replace i tag with a better solution
+        Make your own icons?
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+-AGENCY AREA CSS-
+
+    open the css file
+        In the large media query
+
+            select the lg-cols-3 ckass
+
+                set attribute
+                    grid-template-columns
+                        repeat(3, minmax(0, 1fr))
+
+                finished code
+                    .class{
+                        grid-template-columns: repeat(3, minmax(0, 1fr));
+                    }
+        
+            select the agency-area class of the site-main ID
+
+                set attribute
+                    padding
+                        5em 0
+
+                finished code
+                    #site-main .agency-area{
+                        padding: 5em 0;
+                    }
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+-DIGITAL LIFE HTML-
+
+    open html file
+        to the body tag
+            add section 
+                add class
+                    container
+                    mx-auto
+                    life-area
+                add div
+                    add class
+                        grid
+                        cols-1
+                        lg-cols-2
+                        text-center
+                        md-text-left
+                    add div
+                        add class
+                            grid-images
+                        add div
+                            add class
+                                item-one
+
+                    add div
+                        add class
+                            py10
+                        add spam
+                            add class
+                                d-inline
+                                btn
+                                btn-primary
+                                bg-gradient-peach
+                                text-red
+                            add text
+                                digital experience
+                        add div
+                            add class
+                                font-poppins
+                            add h1
+                                add class
+                                    text-lg
+                                    text-dark
+                                    py-5
+                                add text
+                                    connect people in <br> digital life
+                            add paragraph
+                                add class
+                                    py-5
+                                    text-gray
+                                add text
+                                    lorum ipsum
+                            add paragraph
+                                add class
+                                    text-gray
+                                    py-5
+                                add text
+                                    lorem50
+                            add div
+                                add class
+                                    py-5
+                                add anchor
+                                    add class
+                                        btn
+                                        btn-primary
+                                        bg-gradient
+                                        btn-shadow
+                                        text-white
+                                    add text
+                                        more about us            
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+-DIGITAL LIFE CSS-
+
+    open css file
+        in large media query
+
+            select the lg-cols-2 class
+
+                set attribute
+                    grid-template-columns
+                        repeat(2, minmax(0, 1fr))
+
+                finished code
+                    .lg-cols-2{
+                        grid-template-columns: repeat(2, minmax(0, 1fr));
+                    }
+
+        in medium media query
+
+            select the md-text-left class
+
+                set attribute
+                    text-align
+                        left
+
+                finished code
+                    .md-text-left{
+                        text-align: left;
+                    }
+
+        in custom style
+
+            select the grid class of the life area class of the site-main ID
+
+                set attribute
+                    column-gap
+                        10em
+
+                finished code
+                    #site-main .life-area .grid{
+                        column-gap: 10em;
+                    }
+
+            select the grid images class of the life area class of the site-main ID
+
+                set attribute
+                    display
+                        grid
+                    grid template columns
+                        repeat(16, minmax(10px, 1fr))
+                    grid-template-rows
+                        repeat(8, minmax(100px, 1fr))
+                
+                finished code
+                    #site-main .life-area .grid-images{
+                        display: grid;
+                        grid template columns: repeat(16, minmax(10px, 1fr));
+                        grid-template-rows: repeat(8, minmax(100px, 1fr));
+                    }
+
+            select the item-one class of the grid-images class of the life-area class of the site-man ID
+
+                set attribute
+                    grid-column-start
+                        1
+                    grid-column-end
+                        9
+                    grid-row-start
+                        2
+                    grid-row-end
+                        5
+                    background
+                        var(--bg-image1) no-repeat
+                    border-radius
+                        8px
+                    filter
+                        blur(1px)
+
+                finished code
+                    #site-main .life-area .grid-images .item-one{
+                        grid-column-start: 1;
+                        grid-column-end: 9;
+                        grid-row-start: 2;
+                        grid-row-end: 5;
+                        background: var(--bg-image1) no-repeat;
+                        border-radius: 8px;
+                        filter: blur(1px);
+                    }
+
+            select the item-two class of the grid-images class of the life-area class of the site-man ID
+
+                set attribute
+                    grid-column-start
+                        9
+                    grid-column-end
+                        16
+                    grid-row-start
+                        1
+                    grid-row-end
+                        4
+                    background
+                        var(--bg-image2) no-repeat
+                    border-radius
+                        8px
+                    filter
+                        blur(1px)
+
+                finished code
+                    #site-main .life-area .grid-images .item-two{
+                        grid-column-start: 9;
+                        grid-column-end: 16;
+                        grid-row-start: 1;
+                        grid-row-end: 4;
+                        background: var(--bg-image2) no-repeat;
+                        border-radius: 8px;
+                        filter: blur(1px);
+                    }
+
+            select the item-three class of the grid-images class of the life-area class of the site-man ID
+
+                set attribute
+                    grid-column-start
+                        8
+                    grid-column-end
+                        14
+                    grid-row-start
+                        3
+                    grid-row-end
+                        4
+                    background
+                        var(--bg-image3) no-repeat
+                    border-radius
+                        8px
+                    filter
+                        blur(1px)
+                    z-index
+                        99
+
+                finished code
+                    #site-main .life-area .grid-images .item-three{
+                        grid-column-start: 8;
+                        grid-column-end: 14;
+                        grid-row-start: 3;
+                        grid-row-end: 4;
+                        background: var(--bg-image3) no-repeat;
+                        border-radius: 8px;
+                        filter: blur(1px);
+                        z-index: 99;
+                    }
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+-Counting HTML-
+
+    open index.html
+        in body tag
+            add section
+                add class
+                    container
+                    mx-auto
+                    counting-area
+                add div
+                    add class
+                        grid
+                        cols-1
+                        cols-2
+                    add div
+                        add class
+                            grid-one
+                            text-center
+                            md-text-left
+                        add span
+                            add class
+                                d-inline
+                                btn
+                                btn-primary
+                                bg-gradient--peach
+                                text-red
+                        add div
+                            add class
+                                font-poppins
+                            add h1
+                                add class
+                                    text-lg
+                                    text-dark
+                                    py-5
+                                add text
+                                    the hundreds of <br> complete works <br> still counting
+                            add paragraph
+                                add class
+                                    text-gray
+                                    mx-auto
+                                    md-mx-initial
+                                add text
+                                    lorem40
+                        
+                        add div
+                            add class
+                                grid-two
+                            add div
+                                add class
+                                    count-box
+                                add div
+                                    add class
+                                        grid
+                                        lg-cols-2
+                                        btn-shaodw
+                                        font-poppins
+                                    add div
+                                        add class
+                                            item1
+                                            text-center
+                                        add h1
+                                            add class
+                                                text-dark
+                                                text-xl
+                                            add text
+                                                21+
+                                        add span
+                                            add class
+                                                text-gray
+                                            add text
+                                                Total Top Services
+                                    add div
+                                        add class
+                                            item2
+                                            text-center
+                                        add h1
+                                            add class
+                                                text-dark
+                                                text-xl
+                                            add text
+                                                29+
+                                        add span
+                                            add class
+                                                text-gray
+                                            add text
+                                                Countries
+                                    add div
+                                        add class
+                                            item3
+                                            text-center
+                                        add h1
+                                            add class
+                                                text-dark
+                                                text-xl
+                                            add text
+                                                21%
+                                        add span
+                                            add class
+                                                text-gray
+                                            add text
+                                                Positive Feedback
+                                    add div
+                                        add class
+                                            item4
+                                            text-center
+                                        add h1
+                                            add class
+                                                text-dark
+                                                text-xl
+                                            add text
+                                                3,798
+                                        add span
+                                            add class
+                                                text-gray
+                                            add text
+                                                Active Users
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+-Counting CSS-
+
+    Open style.css
+    create custom styles
+
+        select counting-area class of the site-main ID
+
+            set attributes
+                padding
+                    7em 0
+
+            finished code
+                #site-main .counting-area{
+                    padding: 7em 0;
+                }
+
+        select paragraph of the grid-one class of the counting-area class of the site-main ID
+
+            set attributes
+                width
+                    80%
+
+            finished code
+                #site-main .counting-area .grid-one p{
+                    width: 80%;
+                }
+
+        select count-box class of the counting-area class of the site-main ID
+
+            set attributes
+                display
+                    flex
+                justify-content
+                    center
+                margin
+                    2em 0
+
+            finished code
+                #site-main .counting-area .count-box{
+                    display: flex;
+                    justify-content: center;
+                    margin: 2em 0;
+                }
+        
+        select grid class of the count-box class of the counting-area class of the site-main ID
+
+            set attributes
+                display
+                    inline-grid
+                grid-gap
+                    2px
+                border-radius
+                    20px
+                background-color
+                    var(--text-light)
+                box-shadow
+                    var(--box-shadow)
+
+            finished code
+                #site-main .counting-area .count-box .grid{
+                    display: inline-grid;
+                    grid-gap: 2px;
+                    border-radius: 20px;
+                    background-color: var(--text-light) ;
+                    box-shadow: var(--box-shadow);
+                }
+
+        select all divs in the grid class of the count-box class of the counting-area class of the site-main ID
+
+            set attributes
+                background-color
+                    white
+                padding
+                    2em 1.5em
+                text-align
+                    center
+            
+            finished code
+                site-main .counting-area .count-box .grid > div{
+                    background-color: white;
+                    padding: 2em 1.5em;
+                    text-align: center;
+                }
+        
+
+    In the medium media query
+        select md-text-left class
+            text-align
+                left
+        
+        .md-text-left{
+            text-align: left;
+        }
+
+        select md-mx-initial class
+            margin
+                initial
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+-Card HTML-
+
+    open index.html
+    in the body
+        add section
+            add class
+                container
+                mx-auto
+                card-area
+                py-10
+            add div
+                add class
+                    grid
+                    cols-1
+                    lg-cols-3
+                    font-poppins
+                add div
+                    add class
+                        bg-gradient-peach
+                    add div
+                        add class
+                            card
+                            px-10
+                            py-10
+                        add span
+                            add class
+                                d-block
+                                text-red
+                                text-xl
+                            add i
+                                add class
+                                    bi
+                                    bi-app-i
+                            add h2
+                                add class
+                                    text-dark
+                                add text
+                                    Mobile APp
+                            add p
+                                add class
+                                    py-5
+                                    text-gray
+                                add text
+                                    lorem
+                                
+                add div
+                    add class
+                        bg-gradient-blue
+                    add div
+                        add class
+                            card
+                            px-10
+                            py-10
+                        add span
+                            add class
+                                d-block
+                                text-red
+                                text-xl
+                            add i
+                                add class
+                                    bi
+                                    bi-lightbulb
+                            add h2
+                                add class
+                                    text-dark
+                                add text
+                                    Strategy
+                            add p
+                                add class
+                                    py-5
+                                    text-gray
+                                add text
+                                    lorem
+                
+                add div
+                    add class
+                        bg-gradient-red
+                    add div
+                        add class
+                            card
+                            px-10
+                            py-10
+                        add span
+                            add class
+                                d-block
+                                text-red
+                                text-xl
+                            add i
+                                add class
+                                    bi
+                                    bi-phone
+                            add h2
+                                add class
+                                    text-dark
+                                add text
+                                    eCommerce
+                            add p
+                                add class
+                                    py-5
+                                    text-gray
+                                add text
+                                    lorem
+
+                add div
+                    add class
+                        bg-gradient-yellow
+                    add div
+                        add class
+                            card
+                            px-10
+                            py-10
+                        add span
+                            add class
+                                d-block
+                                text-red
+                                text-xl
+                            add i
+                                add class
+                                    bi
+                                    bi-apple
+                            add h2
+                                add class
+                                    text-dark
+                                add text
+                                    Branding
+                            add p
+                                add class
+                                    py-5
+                                    text-gray
+                                add text
+                                    lorem
+
+                add div
+                    add class
+                        bg-gradient-purple
+                    add div
+                        add class
+                            card
+                            px-10
+                            py-10
+                        add span
+                            add class
+                                d-block
+                                text-red
+                                text-xl
+                            add i
+                                add class
+                                    bi
+                                    bi-chevron-bar-expand
+                            add h2
+                                add class
+                                    text-dark
+                                add text
+                                    Experience Design
+                            add p
+                                add class
+                                    py-5
+                                    text-gray
+                                add text
+                                    lorem
+
+                add div
+                    add class
+                        bg-gradient-yellow
+                    add div
+                        add class
+                            card
+                            px-10
+                            py-10
+                        add span
+                            add class
+                                d-block
+                                text-red
+                                text-xl
+                            add i
+                                add class
+                                    bi
+                                    bi-building
+                            add h2
+                                add class
+                                    text-dark
+                                add text
+                                    Mobile App
+                            add p
+                                add class
+                                    py-5
+                                    text-gray
+                                add text
+                                    lorem
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+-Card CSS-
+
+    open styles.css
+        in custom styles
+            
+            select the grid class of the card-area class of the #site-main ID
+
+                set attributes
+                    column-gap
+                        4em
+                    row-gap
+                        1em
+                
+                finished code
+                    #site-main .card-area. .grid{
+                        column-gap: 4em;
+                        row-gap: 1em;
+                    }
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+-Recent Work HTML-
+
+    open index.html
+        in body
+            add section
+                add class
+                    container
+                    mx-auto
+                    py-10
+                    recent-work-area
+                add div
+                    add class
+                        title
+                    add span
+                        add class
+                            d-inline
+                            btn
+                            btn-primary
+                            bg-gradient-peach
+                            text-red
+                        add text
+                            Digital Experience
+                    add div
+                        add class
+                            font-poppins
+                        add h1
+                            add class
+                                text-lg
+                                text-dark
+                                py-5
+                            add text
+                                Some recent work that<br>we are really proud<br>
+                    add div
+                        add class
+                            images-flex
+                            font-poppins
+                        add div
+                            add class
+                                flex-item
+                            add image
+                                add src
+                                    ./assets/work/img1.png
+                                add alternate text
+                                    img1
+                                add class
+                                    w-100
+                            add h3
+                                add class
+                                    text-dark
+                                add text
+                                    Photo Retouching
+                            add span
+                                add class
+                                    text-gray
+                                add text
+                                    branding
+                        add div
+                            add class
+                                flex-item
+                            add image
+                                add src
+                                    ./assets/work/img2.png
+                                add alternate text
+                                    img2
+                                add class
+                                    w-100
+                            add h3
+                                add class
+                                    text-dark
+                                add text
+                                    Apple iPhone
+                            add span
+                                add class
+                                    text-gray
+                                add text
+                                    branding
+                        add div
+                            add class
+                                flex-item
+                            add image
+                                add src
+                                    ./assets/work/img3.png
+                                add alternate text
+                                    img3
+                                add class
+                                    w-100
+                            add h3
+                                add class
+                                    text-dark
+                                add text
+                                    Yoga
+                            add span
+                                add class
+                                    text-gray
+                                add text
+                                    branding
+                        add div
+                            add class
+                                flex-item
+                            add image
+                                add src
+                                    ./assets/work/img4.png
+                                add alternate text
+                                    img4
+                                add class
+                                    w-100
+                            add h3
+                                add class
+                                    text-dark
+                                add text
+                                    Recent News
+                            add span
+                                add class
+                                    text-gray
+                                add text
+                                    Branding
+                        add div
+                            add class
+                                flex-item
+                            add image
+                                add src
+                                    ./assets/work/img5.png
+                                add alternate text
+                                    img5
+                                add class
+                                    w-100
+                            add h3
+                                add class
+                                    text-dark
+                                add text
+                                    New Apps
+                            add span
+                                add class
+                                    text-gray
+                                add text
+                                    Branding
+                        add div
+                            add class
+                                flex-item
+                            add image
+                                add src
+                                    ./assets/work/img6.png
+                                add alternate text
+                                    img6
+                                add class
+                                    w-100
+                            add h3
+                                add class
+                                    text-dark
+                                add text
+                                iPhone 13pro
+                            add span
+                                add class
+                                    text-gray
+                                add text
+                                    Branding
+                        add div
+                            add class
+                                flex-item
+                            add image
+                                add src
+                                    ./assets/work/img7.png
+                                add alternate text
+                                    img7
+                                add class
+                                    w-100
+                            add h3
+                                add class
+                                    text-dark
+                                add text
+                                    Share Market
+                            add span
+                                add class
+                                    text-gray
+                                add text
+                                    Branding
+                        add div
+                            add class
+                                flex-item
+                            add image
+                                add src
+                                    ./assets/work/img8.png
+                                add alternate text
+                                    img8
+                                add class
+                                    w-100
+                            add h3
+                                add class
+                                    text-dark
+                                add text
+                                    Desktop
+                            add span
+                                add class
+                                    text-gray
+                                add text
+                                    Branding
+                        add div
+                            add class
+                                flex-item
+                            add image
+                                add src
+                                    ./assets/work/img9.png
+                                add alternate text
+                                    img9
+                                add class
+                                    w-100
+                            add h3
+                                add class
+                                    text-dark
+                                add text
+                                    New Apps
+                            add span
+                                add class
+                                    text-gray
+                                add text
+                                    Branding
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+-Recent Work JS-
+
+    open index.html
+        in the body
+            add link to the minified version of masonry.js
+                <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    open main.js
+        initialize variable named grid
+            let grid
+        define grid
+            let grid = document.querySelector('#site-main .recent-work-area .images-flex)
+        initialize varaible named masonry
+            let masonry
+        define masonry
+            let masonry = new Masonry(grid, (
+                itemSelector: '.flex-item',
+                gutter: 100,
+                fitWidth: true
+            ))
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+-Recent Work CSS-
+
+    open style.css
+        in custom classes
+
+            select the flex-item class of the images-flex class of the recent-work-area class of the site main ID
+
+                set attributes
+                    width
+                        360px
+                    margin-bottom
+                        50px
+
+                finished code
+                    #site-main .recent-work-area .images-flex .flex-item{
+                        width: 360px;
+                        margin-bottom: 50px;
+                    }
+
+            select all of the images of the flex-item class of the images-flex class of the recent-work-area class of the site main ID
+
+                set attributes
+                    border radius
+                        10px
+                
+                finished code
+                    #site-main .recent-work-area .images-flex .flex-item img{
+                        border-radius: 10px;
+                    }
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+-Article HTML-
+
+    open index.html
+        In the body tag
+            add section
+                add class
+                    articles-area
+                    container
+                    mx-auto 
+                    py-10
+                add div
+                    add class
+                        text-center
+                        font-poppins
+                        area-title
+                    add span
+                        add class
+                            text-red
+                        add text
+                            Our Recent Articles
+                    add h1
+                        add class
+                            text-lg
+                            text-dark
+                        add text
+                            Articles updated daily
+
+                add div
+                    add class
+                        grid
+                        cols-1
+                        lg-cols-3
+                        font-poppins
+                        py-10
+                    add div
+                        add class
+                            card
+                        add article
+                            add class
+                                btn-shadow
+                            add image
+                                add src
+                                    ./assets/articles/img.1png
+                                add class
+                                    w-100
+                            add div
+                                add class
+                                    px-5
+                                    py-5
+                                add span
+                                    add class
+                                        text-gray
+                                    add text
+                                        category 6 hours ago
+                                add anchor
+                                    add h2
+                                        add class
+                                            text-dark
+                                        add text
+                                            Free advertising of your online business
+
+                    add div
+                        add class
+                            card
+                        add article
+                            add class
+                                btn-shadow
+                            add image
+                                add src
+                                    ./assets/articles/img.2png
+                                add class
+                                    w-100
+                            add div
+                                add class
+                                    px-5
+                                    py-5
+                                add span
+                                    add class
+                                        text-gray
+                                    add text
+                                        category 6 hours ago
+                                add anchor
+                                    add h2
+                                        add class
+                                            text-dark
+                                        add text
+                                            Free advertising of your online business
+
+                    add div
+                        add class
+                            card
+                        add article
+                            add class
+                                btn-shadow
+                            add image
+                                add src
+                                    ./assets/articles/img.3png
+                                add class
+                                    w-100
+                            add div
+                                add class
+                                    px-5
+                                    py-5
+                                add span
+                                    add class
+                                        text-gray
+                                    add text
+                                        category 6 hours ago
+                                add anchor
+                                    add h2
+                                        add class
+                                            text-dark
+                                        add text
+                                            Free advertising of your online business
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+-Article CSS-
+
+    open styles.css
+        in custom styles
+
+            select the grid clss of the article-area class of the site-main ID
+
+                set attributes
+                    column-gap
+                        5em
+
+                finished code
+                    #site-main .article-area .grid{
+                        column-gap: 5em;
+                    }
+            
+            select the article tags of the card class of the article-area class of the site-main ID
+
+                set attributes
+                    border-radius
+                        10px
+                
+                finished code
+                    #site-main .article-area .grid article{
+                        border-radius: 10px;
+                    }
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+-Ready HTML-
+
+    open index.html
+        in body
+            add section
+                add class
+                    redy-area
+                    container
+                    mx-auto
+                    py-5
+                add div
+                    add class
+                        flex
+                        flex-wrap
+                        font-poppins
+                        btn-shadow
+                        py-10
+                        sm-px-10
+                    add div
+                        add class
+                            w-50
+                        add h1
+                            add class
+                                text-lg
+                                sm-text-xl
+                                text-dark
+                            add text
+                                Ready to get started?
+                        add paragraph
+                            add class
+                                text-grey
+                            add text
+                                lorem
+                    add div
+                        add class        
+                            cols
+                            py-5
+                        add anchor
+                            add class
+                                btn-shadow
+                                text-white
+                                btn
+                                btn-primary
+                                d-block
+                                text-center
+                                bg-gradient
+                            add span
+                                add class
+                                    text-uppercase
+                                    text-sm
+                                add text
+                                    Get Started
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+-Ready CSS-
+
+    open style.css
+        in custom styles
+
+            select flex class of the ready-area class of the site-main ID
+                
+                set attribute
+                    display
+                        flex
+                    justify-content
+                        space-around
+                    align-items
+                        center
+                
+                finished code
+                    #site-main .ready-area .flex{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                    }
+
+        in small media query
+
+            select sm-px-10
+                
+                set attribute
+                    padding-left
+                        3.5rem
+                    padding-right:
+                        3.5rem
+                
+                finished code
+                    .sm-px-10{
+                        padding-left: 3.5rem;
+                        padding-right: 3.5rem;
+                    }
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+-Footer HTML-
+
+    open index.html
+        in body
+            add footer
+                add class
+                    footer
+                add section
+                    add class
+                        container
+                        max-auto
+                    add div
+                        add class
+                            grid
+                            md-cols-2
+                            lg-cols-4
+                            font-poppins
+                        add div
+                            add class
+                                text-gray
+                                text-center
+                                md-text-left
+                            add span
+                                add text
+                                    dummy address
+                            add span
+                                add class
+                                    d-block
+                                add text
+                                    dummy phone number
+                            add span
+                                add class
+                                    text-red
+                                add text
+                                    dummy email
+                        add div
+                            add class
+                                text-gray
+                                text-center
+                                md-text-left
+                            add h3
+                                add class
+                                    text-dark
+                                add text
+                                    About
+                            add div
+                                add class
+                                    py-5
+                                add anchor
+                                    add class
+                                        d-block
+                                    add span
+                                        add class
+                                            text-gray
+                                        add text
+                                            About us
+                                add anchor
+                                    add class
+                                        d-block
+                                    add span
+                                        add class
+                                            text-gray
+                                        add text
+                                            Blog
+                                add anchor
+                                    add class
+                                        d-block
+                                    add span
+                                        add class
+                                            text-gray
+                                        add text
+                                            Portfolio
+                                add anchor
+                                    add class
+                                        d-block
+                                    add span
+                                        add class
+                                            text-gray
+                                        add text
+                                            Careers
+                                add anchor
+                                    add class
+                                        d-block
+                                    add span
+                                        add class
+                                            text-gray
+                                        add text
+                                            Partners
+                        add div
+                            add class
+                                text-gray
+                                text-center
+                                md-text-left
+                            add h3
+                                add class
+                                    text-dark
+                                add text
+                                    Services
+                            add div
+                                add class
+                                    py-5
+                                add anchor
+                                    add class
+                                        d-block
+                                    add span
+                                        add class
+                                            text-gray
+                                        add text
+                                            eCommerce
+                                add anchor
+                                    add class
+                                        d-block
+                                    add span
+                                        add class
+                                            text-gray
+                                        add text
+                                            Branding
+                                add anchor
+                                    add class
+                                        d-block
+                                    add span
+                                        add class
+                                            text-gray
+                                        add text
+                                            Strategy
+                                add anchor
+                                    add class
+                                        d-block
+                                    add span
+                                        add class
+                                            text-gray
+                                        add text
+                                            Design
+                                add anchor
+                                    add class
+                                        d-block
+                                    add span
+                                        add class
+                                            text-gray
+                                        add text
+                                            Digital Marketing
+                        add div
+                            add class
+                                text-grey
+                                text-center
+                                md-text-left
+                            add h3
+                                add class
+                                    text-dark
+                                add text
+                                    Newsletter
+                            add paragraph
+                                add text
+                                    Subscribe to our newsletter to get the <br> latest news & updates
+                            add div
+                                add class
+                                    flex
+                                    py-5
+                                add input
+                                    add type
+                                        text
+                                    add class
+                                        subscribe-text
+                                    add placeholder
+                                        Enter Email Address
+                                add button
+                                    add class
+                                        btn
+                                        btn-go
+                                    add text
+                                        Go
+                add div
+                    add class
+                        copyrights
+                        font-poppins
+                    add p
+                        add class
+                            text-gray
+                            py-5
+                            text-center
+                        add text
+                            (copyright symbol) Daily Tuition. All rights reservec
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+
+-Footer CSS-
+
+    open style.css
+
+        in large media query
+            
+            select lg-cols-4 class
+                
+                set attribute
+                    grid-template-columns
+                        repeat(4, minmix(0,1fr))
+
+                finished code
+                    .lg-cols-4{
+                        grid-template-columns: repeat(4, minmix(0,1fr));
+                    }
+
+        in medium media query
+
+            select md-cols-2 class
+
+                set attribute
+                    grid-template-columns
+                        repeat(2, minmix(0,1fr))
+
+                finished code
+                    .md-cols-2{
+                        grid-template-columns: repeat(2, minmix(0,1fr));
+                    }
+
+        in custom style
+
+            select footer ID
+                
+                set sttribure
+                    border-top
+                        2px solid var(--text-light)
+                    margin top
+                        8em
+                
+                finished code
+                    #footer{
+                        border-top: 2px solid var(--text-light);
+                        margin-top: 8em;
+                    }
+
+            select grid class of footer ID
+
+                set sttribute
+                    column gap
+                        3em
+                    padding
+                        6em o
+                    border bottomn
+                        2px solid var(--text-light)
+
+                finished code
+                    #footer .grid{
+                        column-gap: 3em;
+                        padding: 6em 0;
+                        border-bottomn: 2px solid var(--text-light)
+                    }
+                    
+            select input tag with subscribe-text class of grid clss of footer ID
+
+                set attribute
+                    border
+                        none
+                    background-color
+                        var(--text-light)
+                    padding
+                        1em
+                    font-sixe
+                        1em
+                    color
+                        var(--text-dark2)
+                    font-family
+                        var(--font-poppins)
+                
+                finished code
+                    #footer .grid input.subscribe-text{
+                        border: none;
+                        background-color: var(--text-light);
+                        padding: 1em;
+                        font-sixe: 1em;
+                        color: var(--text-dark2);
+                        font-family: var(--font-poppins);
+                    }
+
+            select input tag with subscribe-text class on focus of grid class of footer ID
+
+                set attribute
+                    border
+                        none
+                    outline
+                        none
+
+                finihsed code
+                    #footer .grid input.subscribe-text:focus{
+                        border: none;
+                        outline: none;
+                    }
+
+            select button with btn-go class of grid class of footer ID
+
+                set attribute
+                    background color
+                        var(--text-light)
+                    padding
+                        0 2em
+                    font-family
+                        var(--font-poppins)
+                
+                finished code
+                    #footer .grid button.btn-go{
+                        background color: var(--text-light);
+                        padding: 0 2em;
+                        font-family: var(--font-poppins);
+                    }
+            
+            select button with btn-go class on hover of grid class of footer ID
+
+                set attribute
+                    background-color
+                        var(--text-dark2)
+                    color
+                        var(--text-white)
+                
+                finished code{
+                    background-color: var(--text-dark2);
+                    color: var(--text-white);
+                }
